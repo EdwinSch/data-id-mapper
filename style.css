@@ -1,0 +1,12 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* MAIN CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+}
