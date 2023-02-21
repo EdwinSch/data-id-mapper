@@ -27,6 +27,29 @@
   </head>
 
   <body>
-    <h1>Data&dash;ID Mapper</h1>
+    <header>
+      <h1>Data&dash;ID Mapper&trade;</h1>
+      <p class="description">
+        Generate a batch of random character&sol;number strings to use as unique
+        identifiers.
+      </p>
+    </header>
+    <main>
+      <form class="input-form">
+        <label for="amount">Number of unique id's:</label>
+        <input
+          required
+          type="number"
+          class="amount"
+          name="amount"
+          placeholder="0"
+          min="0"
+        />
+        <input type="button" value="generate" />
+      </form>
+      <section class="id-output">
+        <!-- Dynamic Input -->
+      </section>
+    </main>
   </body>
 </html>
