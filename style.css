@@ -36,7 +36,7 @@ input[type="number"] {
   font-size: 1rem;
   width: 4rem;
 }
-input[type="button"] {
+input[type="submit"] {
   display: block;
   margin-top: 5px;
   font-family: "Roboto", sans-serif;
@@ -52,6 +52,13 @@ input[type="button"] {
   border-radius: 5px;
   background-color: #475569;
 }
-input[type="button"]:hover {
+input[type="submit"]:hover {
   background-color: #94a3b8;
+}
+.id-output {
+  /* display: flex;
+  flex-direction: column; */
+  color: #334155;
+  font-size: 1rem;
+  line-height: 24px;
 }

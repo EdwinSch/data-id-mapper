@@ -35,17 +35,16 @@
       </p>
     </header>
     <main>
-      <form class="input-form">
-        <label for="amount">Number of unique id's:</label>
+      <form id="input-form" method="post">
+        <label for="line-amount">Number of unique id's:</label>
         <input
-          required
           type="number"
-          class="amount"
-          name="amount"
+          id="line-amount"
+          name="line-amount"
           placeholder="0"
           min="0"
         />
-        <input type="button" value="generate" />
+        <input type="submit" value="generate" />
       </form>
       <section class="id-output">
         <!-- Dynamic Input -->
