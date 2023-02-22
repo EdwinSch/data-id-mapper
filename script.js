@@ -12,7 +12,7 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
   // clear output field
   output.innerHTML = "";
-
+  // generate ID's
   let lineAmount = document.getElementById("line-amount").value;
 
   for (let i = 0; i < lineAmount; i++) {
@@ -24,6 +24,14 @@ form.addEventListener("submit", function (event) {
     line.innerHTML = `${id}`;
     output.appendChild(line);
   }
+  // copy to clipboard
+  const lines = document.querySelectorAll("code");
+  lines.forEach((line) => {
+    line.addEventListener("click", function () {
+      navigator.clipboard.writeText(line.innerHTML);
+      line.style.color = "coral";
+    });
+  });
 });
 
 function getInt() {
