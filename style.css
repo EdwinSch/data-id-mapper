@@ -9,18 +9,28 @@
 body {
   font-family: "Roboto", sans-serif;
   padding: 20px;
-  max-width: 1120px;
+  max-width: 1280px;
   background-color: #f8fafc;
+  min-height: 100vh;
+  /* border: solid red 1px; */
 }
+
 h1 {
   color: #334155;
   font-size: 1.5rem;
-  margin-bottom: 2px;
 }
+h2 {
+  font-size: 0.8rem;
+  color: #334155;
+  font-weight: 400;
+}
+
 .description {
+  margin-top: 10px;
   color: #475569;
   font-size: 1rem;
 }
+
 form {
   margin: 20px 0;
   padding: 10px 0;
@@ -56,9 +66,31 @@ input[type="submit"]:hover {
   background-color: #94a3b8;
 }
 .id-output {
-  /* display: flex;
-  flex-direction: column; */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* border: solid blue 1px; */
+  line-height: 26px;
+}
+.id-output > code {
+  display: block;
   color: #334155;
   font-size: 1rem;
-  line-height: 24px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.id-output > code:hover {
+  color: red;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 900px) {
+  .id-output {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .id-output {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

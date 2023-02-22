@@ -29,6 +29,7 @@
   <body>
     <header>
       <h1>Data&dash;ID Mapper&trade;</h1>
+      <h2>version 1.0</h2>
       <p class="description">
         Generate a batch of random character&sol;number strings to use as unique
         identifiers.
@@ -36,13 +37,15 @@
     </header>
     <main>
       <form id="input-form" method="post">
-        <label for="line-amount">Number of unique id's:</label>
+        <label for="line-amount">Amount of unique id's (max: 250)</label>
         <input
+          required
           type="number"
           id="line-amount"
           name="line-amount"
           placeholder="0"
-          min="0"
+          min="1"
+          max="250"
         />
         <input type="submit" value="generate" />
       </form>

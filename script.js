@@ -10,14 +10,18 @@ const mapper = characters.concat(numbers);
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
+  // clear output field
+  output.innerHTML = "";
 
-  for (let i = 0; i < 20; i++) {
+  let lineAmount = document.getElementById("line-amount").value;
+
+  for (let i = 0; i < lineAmount; i++) {
     let id = "";
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 8; i++) {
       id += mapper[getInt()];
     }
-    const line = document.createElement("p");
-    line.innerHTML = `<p>${id}</p>`;
+    const line = document.createElement("code");
+    line.innerHTML = `${id}`;
     output.appendChild(line);
   }
 });
