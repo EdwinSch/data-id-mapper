@@ -9,10 +9,9 @@
 body {
   font-family: "Roboto", sans-serif;
   padding: 20px;
-  max-width: 1280px;
+  max-width: 800px;
   background-color: #f8fafc;
   min-height: 100vh;
-  /* border: solid red 1px; */
 }
 
 h1 {
@@ -23,10 +22,12 @@ h2 {
   font-size: 0.8rem;
   color: #334155;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.description {
-  margin-top: 10px;
+.description,
+.info {
+  margin-top: 8px;
   color: #475569;
   font-size: 1rem;
 }
@@ -67,16 +68,17 @@ input[type="submit"]:hover {
 }
 .id-output {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   /* border: solid blue 1px; */
-  line-height: 26px;
 }
 .id-output > code {
   display: block;
+  margin: 8px 0;
   color: #334155;
   font-size: 1rem;
   cursor: pointer;
   transition: 0.2s ease;
+  /* border: solid green 1px; */
 }
 .id-output > code:hover {
   color: red;
@@ -84,13 +86,15 @@ input[type="submit"]:hover {
 
 /* MOBILE */
 
-@media screen and (max-width: 900px) {
-  .id-output {
-    grid-template-columns: repeat(5, 1fr);
+@media screen and (max-width: 450px) {
+  .description,
+  .info {
+    font-size: 0.9rem;
   }
-}
-@media screen and (max-width: 500px) {
-  .id-output {
-    grid-template-columns: repeat(3, 1fr);
+  label {
+    font-size: 0.9rem;
+  }
+  input[type="number"] {
+    font-size: 0.9rem;
   }
 }
