@@ -29,24 +29,37 @@
   <body>
     <header>
       <h1>Data&dash;ID Mapper&trade;</h1>
-      <h2>version 1.2.1</h2>
+      <h2>version 1.4.2</h2>
       <p class="description">
-        Generate a batch of random 8&dash;digit character&sol;number strings to
-        use as unique identifiers.
-        <p class="info">Click any ID to clipboard copy and mark as used.</p>
+        Generate a batch of unique character&sol;number strings to use as unique
+        identifiers.
       </p>
+      <p class="info">Click any ID to clipboard copy and mark as used.</p>
     </header>
     <main>
       <form id="input-form" method="post">
-        <label for="line-amount">Amount of unique id's (max: 500)&colon; </label>
+        <label for="line-amount"
+          >Number of unique id's &#40;max.500&#41;&colon;
+        </label>
         <input
-          required
+          value="1"
           type="number"
           id="line-amount"
           name="line-amount"
-          placeholder="0"
           min="1"
           max="500"
+        />
+        <br />
+        <label for="character-amount"
+          >Number of characters &#40;min.4 &sol; max.12&#41;&colon;
+        </label>
+        <input
+          value="8"
+          type="number"
+          id="character-amount"
+          name="character-amount"
+          min="4"
+          max="12"
         />
         <input type="submit" value="generate" />
       </form>

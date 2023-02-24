@@ -37,6 +37,7 @@ form {
   padding: 10px 0;
   border-top: solid #334155 1px;
   border-bottom: solid #334155 1px;
+  line-height: 32px;
 }
 label {
   font-size: 1rem;
@@ -49,7 +50,7 @@ input[type="number"] {
 }
 input[type="submit"] {
   display: block;
-  margin-top: 5px;
+  margin-top: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
@@ -69,11 +70,10 @@ input[type="submit"]:hover {
 .id-output {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  /* border: solid blue 1px; */
+  gap: 15px 10px;
 }
 .id-output > code {
   display: block;
-  margin: 8px 0;
   color: #334155;
   font-size: 1rem;
   cursor: pointer;
