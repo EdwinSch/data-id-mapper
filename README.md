@@ -6,18 +6,22 @@ This app generates a batch of unique character/number strings to use as unique i
 
 Click any generated key to clipboard-copy and mark as used.
 
-## Version 1.4.2
+### Version 1.5.2
+
+- Added option to generate numbers only.
+
+### Version 1.4.2
 
 - Added functionality to choose the number of characters per string (min.4 / max. 12).
 - Added default values to input fields.
 - Fix: minor unicode issues.
 
-## Version 1.2.1
+### Version 1.2.1
 
 - Updated the output field to implicit grid, optimizing responsiveness.
 - Maximum output is upgraded to 500 ID's.
 - Fix: minor styling issues.
 
-## Author
+### Author
 
 Made by Front-Ed / 2023.

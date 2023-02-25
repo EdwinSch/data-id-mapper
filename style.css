@@ -27,7 +27,7 @@ h2 {
 
 .description,
 .info {
-  margin-top: 8px;
+  margin-top: 2px;
   color: #475569;
   font-size: 1rem;
 }
@@ -47,6 +47,10 @@ input[type="number"] {
   padding: 0.2rem;
   font-size: 1rem;
   width: 4rem;
+}
+input[type="checkbox"] {
+  accent-color: #475569;
+  cursor: pointer;
 }
 input[type="submit"] {
   display: block;
