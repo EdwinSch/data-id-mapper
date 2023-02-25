@@ -7,11 +7,12 @@ const numbers = Array.from(Array(10).keys());
 let lineAmount;
 let charAmount;
 
-/* ---- FUNCTIONS ---- */
+/* ---- SCRIPT ---- */
 
-// concat 2 symbol arrays
+// Concat 2 symbol arrays
 const mapper = characters.concat(numbers);
 
+// Submit button
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   // clear output field
@@ -35,6 +36,8 @@ form.addEventListener("submit", function (event) {
     });
   });
 });
+
+/* ---- FUNCTIONS ---- */
 
 // Choose random integer
 function getInt(array) {

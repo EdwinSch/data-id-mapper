@@ -6,9 +6,10 @@ This app generates a batch of unique character/number strings to use as unique i
 
 Click any generated key to clipboard-copy and mark as used.
 
-### Version 1.5.2
+### Version 1.5.3
 
 - Added option to generate numbers only.
+- Refactoring
 
 ### Version 1.4.2
 

@@ -55,6 +55,7 @@ input[type="checkbox"] {
 input[type="submit"] {
   display: block;
   margin-top: 10px;
+  margin-right: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
@@ -69,7 +70,7 @@ input[type="submit"] {
   background-color: #475569;
 }
 input[type="submit"]:hover {
-  background-color: #94a3b8;
+  background-color: mediumseagreen;
 }
 .id-output {
   display: grid;
@@ -82,7 +83,6 @@ input[type="submit"]:hover {
   font-size: 1rem;
   cursor: pointer;
   transition: 0.2s ease;
-  /* border: solid green 1px; */
 }
 .id-output > code:hover {
   color: red;
