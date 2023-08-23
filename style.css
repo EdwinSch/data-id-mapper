@@ -9,7 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   padding: 20px;
-  max-width: 800px;
+  max-width: 850px;
   background-color: #f8fafc;
   min-height: 100vh;
 }
@@ -73,9 +73,9 @@ input[type="submit"]:hover {
   background-color: mediumseagreen;
 }
 .id-output {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
 }
 .id-output > code {
   display: block;

@@ -1,10 +1,16 @@
-## Data-ID Mapper
+## UUID Mapper
 
 🚀 [LIVE VERSION](https://edwinsch.github.io/data-id-mapper/)
 
-This app generates a batch of unique character/number strings to use as unique identifiers/keys (or whatever else). That's all... just a simple tool for everybody who's tired of coming up with id's or data-sets for your objects and attributes... like me ;)
+This app generates a batch of unique character/number strings to use as unique identifiers/keys (or whatever else). That's all... just a simple tool for coming up with id's or data-sets for your objects and attributes.
 
 Click any generated key to clipboard-copy and mark as used.
+
+### Version 1.6.1
+
+- Toast notifications feature
+- Tool rename
+- Maximum characters upgraded
 
 ### Version 1.5.3
 
