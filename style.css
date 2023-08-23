@@ -12,6 +12,36 @@ body {
   max-width: 850px;
   background-color: #f8fafc;
   min-height: 100vh;
+  position: relative;
+}
+
+.toast-wrapper {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: green;
+  color: whitesmoke;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+.show-toast {
+  display: block;
+  animation-name: slide;
+  animation-duration: 250ms;
+  animation-timing-function: ease;
+}
+
+@keyframes slide {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 20px;
+  }
 }
 
 h1 {

@@ -1,6 +1,7 @@
 /* ---- TARGETS && INITIALIZERS ---- */
 const form = document.getElementById("input-form");
 const output = document.querySelector(".id-output");
+const toast = document.querySelector(".toast-wrapper");
 const characters = "abcdefghijklmnopqrstuvwxyz".split("");
 const numbers = Array.from(Array(10).keys());
 
@@ -33,6 +34,11 @@ form.addEventListener("submit", function (event) {
     line.addEventListener("click", function () {
       navigator.clipboard.writeText(line.innerHTML);
       line.style.color = "coral";
+      toast.classList.add("show-toast");
+
+      setTimeout(() => {
+        toast.classList.remove("show-toast");
+      }, 1000);
     });
   });
 });

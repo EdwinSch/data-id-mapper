@@ -6,7 +6,7 @@ This app generates a batch of unique character/number strings to use as unique i
 
 Click any generated key to clipboard-copy and mark as used.
 
-### Version 1.6.1
+### Version 1.6.2
 
 - Toast notifications feature
 - Tool rename
